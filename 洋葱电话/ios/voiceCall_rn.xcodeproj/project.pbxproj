@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2221B6C62345FD0700DF9BDE /* ProximityModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221B6C52345FD0700DF9BDE /* ProximityModule.m */; };
+		223E63F32336750D00CDFC55 /* CallKitCallModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 223E63F22336750D00CDFC55 /* CallKitCallModule.m */; };
+		225C39462359F8FB00E0BC2C /* CADisplayLineImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C393E2359F8E000E0BC2C /* CADisplayLineImage.m */; };
+		225C39472359F8FB00E0BC2C /* GIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C39432359F8F500E0BC2C /* GIFImageView.m */; };
+		225C39482359F8FB00E0BC2C /* CADisplayLineImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C39442359F8F800E0BC2C /* CADisplayLineImageView.m */; };
+		225C39492359F8FB00E0BC2C /* GIFImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C39452359F8FB00E0BC2C /* GIFImageViewManager.m */; };
+		225C39952367268D00E0BC2C /* RNCustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C39942367268D00E0BC2C /* RNCustomKeyboard.m */; };
+		225C39C5236D8F3D00E0BC2C /* CustomeRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C39C4236D8F3D00E0BC2C /* CustomeRootView.m */; };
+		225C39CF2379D1B800E0BC2C /* wi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C39CE2379D1B800E0BC2C /* wi.swift */; };
+		225C39DE2379D72C00E0BC2C /* img_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39D12379D72C00E0BC2C /* img_10.png */; };
+		225C39DF2379D72C00E0BC2C /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39D22379D72C00E0BC2C /* img_1.png */; };
+		225C39E02379D72C00E0BC2C /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39D32379D72C00E0BC2C /* img_0.png */; };
+		225C39E22379D72C00E0BC2C /* img_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39D52379D72C00E0BC2C /* img_2.png */; };
+		225C39E32379D72C00E0BC2C /* img_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39D62379D72C00E0BC2C /* img_3.png */; };
+		225C39E52379D72C00E0BC2C /* img_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39D82379D72C00E0BC2C /* img_7.png */; };
+		225C39E62379D72C00E0BC2C /* img_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39D92379D72C00E0BC2C /* img_6.png */; };
+		225C39E72379D72C00E0BC2C /* img_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39DA2379D72C00E0BC2C /* img_4.png */; };
+		225C39E82379D72C00E0BC2C /* img_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39DB2379D72C00E0BC2C /* img_5.png */; };
+		225C39E92379D72C00E0BC2C /* img_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39DC2379D72C00E0BC2C /* img_8.png */; };
+		225C39EA2379D72C00E0BC2C /* img_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C39DD2379D72C00E0BC2C /* img_9.png */; };
+		22A652F6249611AA00E02993 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22A652F5249611A900E02993 /* TZImagePickerController.bundle */; };
+		22FF6FC1230801C100C28D8D /* CallModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF6FC0230801C100C28D8D /* CallModule.m */; };
+		D5762BDA82A538B64CD8486D /* libPods-voiceCall_rn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A8B3EBA84E889465C07E5E /* libPods-voiceCall_rn.a */; };
+		EC0DC8665F1D4BA3BCD8BFAC /* PingFang-SC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBA32C25A63447E699676276 /* PingFang-SC-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* voiceCall_rn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceCall_rn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = voiceCall_rn/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = voiceCall_rn/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = voiceCall_rn/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = voiceCall_rn/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = voiceCall_rn/main.m; sourceTree = "<group>"; };
+		2211EDD7230A7A2D00E4B940 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2211EDD8230A7F6400E4B940 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2221B6C42345FD0700DF9BDE /* ProximityModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProximityModule.h; sourceTree = "<group>"; };
+		2221B6C52345FD0700DF9BDE /* ProximityModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProximityModule.m; sourceTree = "<group>"; };
+		223E63F12336750D00CDFC55 /* CallKitCallModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallKitCallModule.h; sourceTree = "<group>"; };
+		223E63F22336750D00CDFC55 /* CallKitCallModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallKitCallModule.m; sourceTree = "<group>"; };
+		225C393E2359F8E000E0BC2C /* CADisplayLineImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLineImage.m; sourceTree = "<group>"; };
+		225C393F2359F8E400E0BC2C /* CADisplayLineImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImage.h; sourceTree = "<group>"; };
+		225C39402359F8E800E0BC2C /* GIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageView.h; sourceTree = "<group>"; };
+		225C39412359F8EC00E0BC2C /* GIFImageViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageViewManager.h; sourceTree = "<group>"; };
+		225C39422359F8F100E0BC2C /* CADisplayLineImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLineImageView.h; sourceTree = "<group>"; };
+		225C39432359F8F500E0BC2C /* GIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageView.m; sourceTree = "<group>"; };
+		225C39442359F8F800E0BC2C /* CADisplayLineImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLineImageView.m; sourceTree = "<group>"; };
+		225C39452359F8FB00E0BC2C /* GIFImageViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageViewManager.m; sourceTree = "<group>"; };
+		225C396E2366DD7B00E0BC2C /* libRCTCustomInputController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRCTCustomInputController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		225C39932367268900E0BC2C /* RNCustomKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCustomKeyboard.h; sourceTree = "<group>"; };
+		225C39942367268D00E0BC2C /* RNCustomKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCustomKeyboard.m; sourceTree = "<group>"; };
+		225C39C3236D8F3D00E0BC2C /* CustomeRootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomeRootView.h; sourceTree = "<group>"; };
+		225C39C4236D8F3D00E0BC2C /* CustomeRootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomeRootView.m; sourceTree = "<group>"; };
+		225C39CD2379D1B700E0BC2C /* voiceCall_rn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "voiceCall_rn-Bridging-Header.h"; sourceTree = "<group>"; };
+		225C39CE2379D1B800E0BC2C /* wi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wi.swift; sourceTree = "<group>"; };
+		225C39D12379D72C00E0BC2C /* img_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_10.png; sourceTree = "<group>"; };
+		225C39D22379D72C00E0BC2C /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		225C39D32379D72C00E0BC2C /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		225C39D52379D72C00E0BC2C /* img_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_2.png; sourceTree = "<group>"; };
+		225C39D62379D72C00E0BC2C /* img_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_3.png; sourceTree = "<group>"; };
+		225C39D82379D72C00E0BC2C /* img_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_7.png; sourceTree = "<group>"; };
+		225C39D92379D72C00E0BC2C /* img_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_6.png; sourceTree = "<group>"; };
+		225C39DA2379D72C00E0BC2C /* img_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_4.png; sourceTree = "<group>"; };
+		225C39DB2379D72C00E0BC2C /* img_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_5.png; sourceTree = "<group>"; };
+		225C39DC2379D72C00E0BC2C /* img_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_8.png; sourceTree = "<group>"; };
+		225C39DD2379D72C00E0BC2C /* img_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_9.png; sourceTree = "<group>"; };
+		22A652F5249611A900E02993 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TZImagePickerController.bundle; path = Pods/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle; sourceTree = "<group>"; };
+		22FF6FBF230801C100C28D8D /* CallModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallModule.h; sourceTree = "<group>"; };
+		22FF6FC0230801C100C28D8D /* CallModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallModule.m; sourceTree = "<group>"; };
+		22FF6FC2230804AC00C28D8D /* voiceCall_rn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = voiceCall_rn.entitlements; path = voiceCall_rn/voiceCall_rn.entitlements; sourceTree = "<group>"; };
+		2B62B79D450690BB5EF6A720 /* Pods-voiceCall_rn-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rn-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-voiceCall_rn-tvOSTests/Pods-voiceCall_rn-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		51DB5EF2F70A770CE8F8A470 /* Pods-voiceCall_rnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rnTests.release.xcconfig"; path = "Target Support Files/Pods-voiceCall_rnTests/Pods-voiceCall_rnTests.release.xcconfig"; sourceTree = "<group>"; };
+		58A8B3EBA84E889465C07E5E /* libPods-voiceCall_rn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-voiceCall_rn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDFDCD02DBF436060EE441B /* Pods-voiceCall_rn-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rn-tvOS.release.xcconfig"; path = "Target Support Files/Pods-voiceCall_rn-tvOS/Pods-voiceCall_rn-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		6596D7BAEEE69A05F90CE426 /* libPods-voiceCall_rn-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-voiceCall_rn-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75727C3D66D03083F261B8CA /* Pods-voiceCall_rnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rnTests.debug.xcconfig"; path = "Target Support Files/Pods-voiceCall_rnTests/Pods-voiceCall_rnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		795482A4EFAA87D9E6AB9559 /* Pods-voiceCall_rn-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rn-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-voiceCall_rn-tvOSTests/Pods-voiceCall_rn-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		839B2D4FF87E3F8ED54CFCD6 /* Pods-voiceCall_rn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rn.release.xcconfig"; path = "Target Support Files/Pods-voiceCall_rn/Pods-voiceCall_rn.release.xcconfig"; sourceTree = "<group>"; };
+		885ACF1631EF71723147AD2A /* libPods-voiceCall_rnTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-voiceCall_rnTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59E8C8522F8268AE830CCD5 /* Pods-voiceCall_rn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rn.debug.xcconfig"; path = "Target Support Files/Pods-voiceCall_rn/Pods-voiceCall_rn.debug.xcconfig"; sourceTree = "<group>"; };
+		BBA32C25A63447E699676276 /* PingFang-SC-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PingFang-SC-Regular.ttf"; path = "../src/assets/fonts/PingFang-SC-Regular.ttf"; sourceTree = "<group>"; };
+		CCE3C078894DA012C492C498 /* libPods-voiceCall_rn-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-voiceCall_rn-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44D1FDABEFE331311AEC615 /* Pods-voiceCall_rn-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voiceCall_rn-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-voiceCall_rn-tvOS/Pods-voiceCall_rn-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5762BDA82A538B64CD8486D /* libPods-voiceCall_rn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* voiceCall_rn */ = {
+			isa = PBXGroup;
+			children = (
+				225C39912367264400E0BC2C /* libs */,
+				225C393D2359F8B700E0BC2C /* GIFImageModal */,
+				2221B6C32345FCCA00DF9BDE /* ProximityModule */,
+				22FF6FC2230804AC00C28D8D /* voiceCall_rn.entitlements */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				225C39CE2379D1B800E0BC2C /* wi.swift */,
+				225C39C3236D8F3D00E0BC2C /* CustomeRootView.h */,
+				225C39C4236D8F3D00E0BC2C /* CustomeRootView.m */,
+				22FF6FBE2308018700C28D8D /* CallModule */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				225C39CD2379D1B700E0BC2C /* voiceCall_rn-Bridging-Header.h */,
+			);
+			name = voiceCall_rn;
+			sourceTree = "<group>";
+		};
+		2221B6BD2345FAD400DF9BDE /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		2221B6C32345FCCA00DF9BDE /* ProximityModule */ = {
+			isa = PBXGroup;
+			children = (
+				2221B6C42345FD0700DF9BDE /* ProximityModule.h */,
+				2221B6C52345FD0700DF9BDE /* ProximityModule.m */,
+			);
+			path = ProximityModule;
+			sourceTree = "<group>";
+		};
+		225C393D2359F8B700E0BC2C /* GIFImageModal */ = {
+			isa = PBXGroup;
+			children = (
+				225C393F2359F8E400E0BC2C /* CADisplayLineImage.h */,
+				225C393E2359F8E000E0BC2C /* CADisplayLineImage.m */,
+				225C39422359F8F100E0BC2C /* CADisplayLineImageView.h */,
+				225C39442359F8F800E0BC2C /* CADisplayLineImageView.m */,
+				225C39402359F8E800E0BC2C /* GIFImageView.h */,
+				225C39432359F8F500E0BC2C /* GIFImageView.m */,
+				225C39412359F8EC00E0BC2C /* GIFImageViewManager.h */,
+				225C39452359F8FB00E0BC2C /* GIFImageViewManager.m */,
+			);
+			path = GIFImageModal;
+			sourceTree = "<group>";
+		};
+		225C39912367264400E0BC2C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				225C39922367265400E0BC2C /* CustomKeyBoard */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		225C39922367265400E0BC2C /* CustomKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				225C39932367268900E0BC2C /* RNCustomKeyboard.h */,
+				225C39942367268D00E0BC2C /* RNCustomKeyboard.m */,
+			);
+			path = CustomKeyBoard;
+			sourceTree = "<group>";
+		};
+		225C39D02379D72C00E0BC2C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				225C39D12379D72C00E0BC2C /* img_10.png */,
+				225C39D22379D72C00E0BC2C /* img_1.png */,
+				225C39D32379D72C00E0BC2C /* img_0.png */,
+				225C39D52379D72C00E0BC2C /* img_2.png */,
+				225C39D62379D72C00E0BC2C /* img_3.png */,
+				225C39D82379D72C00E0BC2C /* img_7.png */,
+				225C39D92379D72C00E0BC2C /* img_6.png */,
+				225C39DA2379D72C00E0BC2C /* img_4.png */,
+				225C39DB2379D72C00E0BC2C /* img_5.png */,
+				225C39DC2379D72C00E0BC2C /* img_8.png */,
+				225C39DD2379D72C00E0BC2C /* img_9.png */,
+			);
+			name = images;
+			path = ../src/assets/open/images;
+			sourceTree = "<group>";
+		};
+		22FF6FBE2308018700C28D8D /* CallModule */ = {
+			isa = PBXGroup;
+			children = (
+				22FF6FBF230801C100C28D8D /* CallModule.h */,
+				22FF6FC0230801C100C28D8D /* CallModule.m */,
+				223E63F12336750D00CDFC55 /* CallKitCallModule.h */,
+				223E63F22336750D00CDFC55 /* CallKitCallModule.m */,
+			);
+			path = CallModule;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				225C396E2366DD7B00E0BC2C /* libRCTCustomInputController.a */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				58A8B3EBA84E889465C07E5E /* libPods-voiceCall_rn.a */,
+				6596D7BAEEE69A05F90CE426 /* libPods-voiceCall_rn-tvOS.a */,
+				CCE3C078894DA012C492C498 /* libPods-voiceCall_rn-tvOSTests.a */,
+				885ACF1631EF71723147AD2A /* libPods-voiceCall_rnTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				22A652F5249611A900E02993 /* TZImagePickerController.bundle */,
+				13B07FAE1A68108700A75B9A /* voiceCall_rn */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				E9F3333430BC1FBF16A9492C /* Pods */,
+				2221B6BD2345FAD400DF9BDE /* Recovered References */,
+				8963371DD89B4D65A0F5E78C /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* voiceCall_rn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8963371DD89B4D65A0F5E78C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				225C39D02379D72C00E0BC2C /* images */,
+				BBA32C25A63447E699676276 /* PingFang-SC-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E9F3333430BC1FBF16A9492C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A59E8C8522F8268AE830CCD5 /* Pods-voiceCall_rn.debug.xcconfig */,
+				839B2D4FF87E3F8ED54CFCD6 /* Pods-voiceCall_rn.release.xcconfig */,
+				E44D1FDABEFE331311AEC615 /* Pods-voiceCall_rn-tvOS.debug.xcconfig */,
+				5EDFDCD02DBF436060EE441B /* Pods-voiceCall_rn-tvOS.release.xcconfig */,
+				795482A4EFAA87D9E6AB9559 /* Pods-voiceCall_rn-tvOSTests.debug.xcconfig */,
+				2B62B79D450690BB5EF6A720 /* Pods-voiceCall_rn-tvOSTests.release.xcconfig */,
+				75727C3D66D03083F261B8CA /* Pods-voiceCall_rnTests.debug.xcconfig */,
+				51DB5EF2F70A770CE8F8A470 /* Pods-voiceCall_rnTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* voiceCall_rn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "voiceCall_rn" */;
+			buildPhases = (
+				39E4E2AF11A2B682AAE388CB /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				F4512530432F172E4FE3BA3E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = voiceCall_rn;
+			productName = voiceCall_rn;
+			productReference = 13B07F961A680F5B00A75B9A /* voiceCall_rn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 940;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 42H7VYTQU7;
+						LastSwiftMigration = 1110;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "voiceCall_rn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Base,
+				"zh-Hans",
+				en,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* voiceCall_rn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225C39E92379D72C00E0BC2C /* img_8.png in Resources */,
+				225C39DE2379D72C00E0BC2C /* img_10.png in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				225C39E62379D72C00E0BC2C /* img_6.png in Resources */,
+				225C39E82379D72C00E0BC2C /* img_5.png in Resources */,
+				225C39EA2379D72C00E0BC2C /* img_9.png in Resources */,
+				225C39E02379D72C00E0BC2C /* img_0.png in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				EC0DC8665F1D4BA3BCD8BFAC /* PingFang-SC-Regular.ttf in Resources */,
+				225C39DF2379D72C00E0BC2C /* img_1.png in Resources */,
+				225C39E22379D72C00E0BC2C /* img_2.png in Resources */,
+				225C39E32379D72C00E0BC2C /* img_3.png in Resources */,
+				22A652F6249611AA00E02993 /* TZImagePickerController.bundle in Resources */,
+				225C39E72379D72C00E0BC2C /* img_4.png in Resources */,
+				225C39E52379D72C00E0BC2C /* img_7.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+			showEnvVarsInLog = 0;
+		};
+		39E4E2AF11A2B682AAE388CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voiceCall_rn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4512530432F172E4FE3BA3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voiceCall_rn/Pods-voiceCall_rn-frameworks.sh",
+				"${PODS_ROOT}/TwilioVoice/Build/iOS/TwilioVoice.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVoice.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voiceCall_rn/Pods-voiceCall_rn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225C39462359F8FB00E0BC2C /* CADisplayLineImage.m in Sources */,
+				223E63F32336750D00CDFC55 /* CallKitCallModule.m in Sources */,
+				2221B6C62345FD0700DF9BDE /* ProximityModule.m in Sources */,
+				225C39482359F8FB00E0BC2C /* CADisplayLineImageView.m in Sources */,
+				225C39492359F8FB00E0BC2C /* GIFImageViewManager.m in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				225C39CF2379D1B800E0BC2C /* wi.swift in Sources */,
+				22FF6FC1230801C100C28D8D /* CallModule.m in Sources */,
+				225C39C5236D8F3D00E0BC2C /* CustomeRootView.m in Sources */,
+				225C39472359F8FB00E0BC2C /* GIFImageView.m in Sources */,
+				225C39952367268D00E0BC2C /* RNCustomKeyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+				2211EDD7230A7A2D00E4B940 /* zh-Hans */,
+				2211EDD8230A7F6400E4B940 /* en */,
+			);
+			name = LaunchScreen.xib;
+			path = voiceCall_rn;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59E8C8522F8268AE830CCD5 /* Pods-voiceCall_rn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = voiceCall_rn/voiceCall_rn.entitlements;
+				CURRENT_PROJECT_VERSION = 1.2.1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 42H7VYTQU7;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = voiceCall_rn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.2.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rn.voicecalle;
+				PRODUCT_NAME = voiceCall_rn;
+				SWIFT_OBJC_BRIDGING_HEADER = "voiceCall_rn-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839B2D4FF87E3F8ED54CFCD6 /* Pods-voiceCall_rn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon1;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = voiceCall_rn/voiceCall_rn.entitlements;
+				CURRENT_PROJECT_VERSION = 1.2.1;
+				DEVELOPMENT_TEAM = 42H7VYTQU7;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = voiceCall_rn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.2.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.rn.voicecalle;
+				PRODUCT_NAME = voiceCall_rn;
+				SWIFT_OBJC_BRIDGING_HEADER = "voiceCall_rn-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "voiceCall_rn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "voiceCall_rn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

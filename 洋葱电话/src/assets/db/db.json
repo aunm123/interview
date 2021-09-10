@@ -1,0 +1,2632 @@
+{
+    "type": "database",
+    "name": "db",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "config",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE config (id INTEGER PRIMARY KEY AUTOINCREMENT, \"key\" VARCHAR UNIQUE, bell INTEGER DEFAULT (0), ban INTEGER DEFAULT (0), userid VARCHAR)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "key",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "bell",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT (0)"
+                        }
+                    ]
+                },
+                {
+                    "name": "ban",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT (0)"
+                        }
+                    ]
+                },
+                {
+                    "name": "userid",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "contact",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE contact (\n    id     INTEGER       NOT NULL,\n    name   VARCHAR (64)  NOT NULL,\n    icon   VARCHAR (255),\n    userid VARCHAR (64)  NOT NULL,\n    primary key (id ,userid) \n)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "icon",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "userid",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "constraints": [
+                {
+                    "type": "PRIMARY KEY",
+                    "definition": "primary key (id ,userid) \n"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "contact_phone",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE contact_phone (id INTEGER PRIMARY KEY AUTOINCREMENT, country_no INTEGER, phone_no VARCHAR, type INTEGER, contact_no INTEGER NOT NULL, userid VARCHAR (64))",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "country_no",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "phone_no",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "type",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "contact_no",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "userid",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "db_version",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE db_version (id INTEGER PRIMARY KEY, version INTEGER)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY"
+                        }
+                    ]
+                },
+                {
+                    "name": "version",
+                    "type": "INTEGER"
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    2
+                ]
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "history",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE history (id INTEGER PRIMARY KEY AUTOINCREMENT, date TIMESTAMP NOT NULL DEFAULT (datetime('now', 'localtime')), state INT (64) DEFAULT (0), type INT (64) DEFAULT (0), content VARCHAR, tophone VARCHAR (64), fromphone VARCHAR (64), time integer (128), isread INTEGER (64), \"index\" UNIQUE, userid VARCHAR (64))",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "date",
+                    "type": "TIMESTAMP",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL "
+                        },
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT (datetime('now', 'localtime'))"
+                        }
+                    ]
+                },
+                {
+                    "name": "state",
+                    "type": "INT",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT (0)"
+                        }
+                    ]
+                },
+                {
+                    "name": "type",
+                    "type": "INT",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT (0)"
+                        }
+                    ]
+                },
+                {
+                    "name": "content",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "tophone",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "fromphone",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "time",
+                    "type": "integer"
+                },
+                {
+                    "name": "isread",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "index",
+                    "type": "",
+                    "constraints": [
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "userid",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "photo",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE photo (id INTEGER PRIMARY KEY AUTOINCREMENT, small_url VARCHAR, big_url VARCHAR, width INTEGER, height INTEGER, isupload INTEGER, filename VARCHAR, filetype VARCHAR, userid VARCHAR (64))",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "small_url",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "big_url",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "width",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "height",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "isupload",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "filename",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "filetype",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "userid",
+                    "type": "VARCHAR"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "recent",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE recent (id INTEGER PRIMARY KEY AUTOINCREMENT, message_id INTEGER, userid VARCHAR, targetPhone VARCHAR UNIQUE, \"index\" INTEGER)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "message_id",
+                    "type": "INTEGER"
+                },
+                {
+                    "name": "userid",
+                    "type": "VARCHAR"
+                },
+                {
+                    "name": "targetPhone",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "UNIQUE",
+                            "definition": "UNIQUE"
+                        }
+                    ]
+                },
+                {
+                    "name": "index",
+                    "type": "INTEGER"
+                }
+            ],
+            "rows": [
+            ]
+        },
+        {
+            "type": "table",
+            "database": null,
+            "name": "wold_country",
+            "withoutRowId": true,
+            "ddl": "CREATE TABLE wold_country (id INTEGER PRIMARY KEY AUTOINCREMENT, country_en VARCHAR (64) DEFAULT NULL, country_cn VARCHAR (64) DEFAULT NULL, country_code VARCHAR (16) DEFAULT NULL, continent VARCHAR (64) DEFAULT NULL, country_no VARCHAR (16) DEFAULT NULL, status INT (16) DEFAULT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "country_en",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "country_cn",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "country_code",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "continent",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "country_no",
+                    "type": "VARCHAR",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "status",
+                    "type": "INT",
+                    "constraints": [
+                        {
+                            "type": "DEFAULT",
+                            "definition": "DEFAULT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Afghanistan",
+                    "阿富汗",
+                    "AF",
+                    "亚洲",
+                    "93",
+                    1
+                ],
+                [
+                    2,
+                    "Albania",
+                    "阿尔巴尼亚",
+                    "AL",
+                    "欧洲",
+                    "355",
+                    1
+                ],
+                [
+                    3,
+                    "Algeria",
+                    "阿尔及利亚",
+                    "DZ",
+                    "非洲",
+                    "213",
+                    1
+                ],
+                [
+                    4,
+                    "American Samoa",
+                    "萨摩亚",
+                    "AS",
+                    "大洋洲",
+                    "684",
+                    1
+                ],
+                [
+                    5,
+                    "Andorra",
+                    "安道尔共和国",
+                    "AD",
+                    "欧洲",
+                    "376",
+                    1
+                ],
+                [
+                    6,
+                    "Angola",
+                    "安哥拉",
+                    "AO",
+                    "非洲",
+                    "244",
+                    1
+                ],
+                [
+                    7,
+                    "Anguilla",
+                    "安圭拉",
+                    "AI",
+                    "欧洲",
+                    "1264",
+                    1
+                ],
+                [
+                    8,
+                    "Antarctica",
+                    "南极洲",
+                    "AQ",
+                    "",
+                    "672",
+                    1
+                ],
+                [
+                    9,
+                    "Antigua and Barbuda",
+                    "安提瓜和巴布达",
+                    "AG",
+                    "北美洲",
+                    "1268",
+                    1
+                ],
+                [
+                    10,
+                    "Argentina",
+                    "阿根廷",
+                    "AR",
+                    "南美洲",
+                    "54",
+                    1
+                ],
+                [
+                    11,
+                    "Armenia",
+                    "亚美尼亚",
+                    "AM",
+                    "亚洲",
+                    "374",
+                    1
+                ],
+                [
+                    12,
+                    "Aruba",
+                    "阿鲁巴",
+                    "AW",
+                    "北美洲",
+                    "297",
+                    1
+                ],
+                [
+                    13,
+                    "Australia",
+                    "澳大利亚",
+                    "AU",
+                    "大洋洲",
+                    "61",
+                    1
+                ],
+                [
+                    14,
+                    "Austria",
+                    "奥地利",
+                    "AT",
+                    "欧洲",
+                    "43",
+                    1
+                ],
+                [
+                    15,
+                    "Azerbaijan",
+                    "阿塞拜疆",
+                    "AZ",
+                    "亚洲",
+                    "994",
+                    1
+                ],
+                [
+                    16,
+                    "Bahamas",
+                    "巴哈马",
+                    "BS",
+                    "北美洲",
+                    "1242",
+                    1
+                ],
+                [
+                    17,
+                    "Bahrain",
+                    "巴林",
+                    "BH",
+                    "亚洲",
+                    "973",
+                    1
+                ],
+                [
+                    18,
+                    "Bangladesh",
+                    "孟加拉国",
+                    "BD",
+                    "亚洲",
+                    "880",
+                    1
+                ],
+                [
+                    19,
+                    "Barbados",
+                    "巴巴多斯",
+                    "BB",
+                    "北美洲",
+                    "1246",
+                    1
+                ],
+                [
+                    20,
+                    "Belarus",
+                    "白俄罗斯",
+                    "BY",
+                    "欧洲",
+                    "375",
+                    1
+                ],
+                [
+                    21,
+                    "Belgium",
+                    "比利时",
+                    "BE",
+                    "欧洲",
+                    "32",
+                    1
+                ],
+                [
+                    22,
+                    "Belize",
+                    "伯利兹城",
+                    "BZ",
+                    "北美洲",
+                    "501",
+                    1
+                ],
+                [
+                    23,
+                    "Benin",
+                    "贝宁",
+                    "BJ",
+                    "非洲",
+                    "229",
+                    1
+                ],
+                [
+                    24,
+                    "Bermuda",
+                    "百慕大",
+                    "BM",
+                    "欧洲",
+                    "1441",
+                    1
+                ],
+                [
+                    25,
+                    "Bhutan",
+                    "不丹",
+                    "BT",
+                    "亚洲",
+                    "975",
+                    1
+                ],
+                [
+                    26,
+                    "Bolivia",
+                    "玻利维亚",
+                    "BO",
+                    "南美洲",
+                    "591",
+                    1
+                ],
+                [
+                    27,
+                    "Bosnia and Herzegovina",
+                    "波斯尼亚和黑塞哥维那",
+                    "BA",
+                    "欧洲",
+                    "387",
+                    1
+                ],
+                [
+                    28,
+                    "Botswana",
+                    "博茨瓦纳",
+                    "BW",
+                    "非洲",
+                    "267",
+                    1
+                ],
+                [
+                    29,
+                    "Bouvet Island",
+                    "布维岛",
+                    "BV",
+                    "",
+                    "",
+                    1
+                ],
+                [
+                    30,
+                    "Brazil",
+                    "巴西",
+                    "BR",
+                    "南美洲",
+                    "55",
+                    1
+                ],
+                [
+                    31,
+                    "British Indian Ocean Territory",
+                    "英属印度洋领地",
+                    "IO",
+                    "亚洲",
+                    "1284",
+                    1
+                ],
+                [
+                    32,
+                    "Brunei Darussalam",
+                    "文莱达鲁萨兰国",
+                    "BN",
+                    "亚洲",
+                    "673",
+                    1
+                ],
+                [
+                    33,
+                    "Bulgaria",
+                    "保加利亚",
+                    "BG",
+                    "欧洲",
+                    "359",
+                    1
+                ],
+                [
+                    34,
+                    "Burkina Faso",
+                    "布基纳法索",
+                    "BF",
+                    "非洲",
+                    "226",
+                    1
+                ],
+                [
+                    35,
+                    "Burundi",
+                    "布隆迪",
+                    "BI",
+                    "非洲",
+                    "257",
+                    1
+                ],
+                [
+                    36,
+                    "Cambodia",
+                    "柬埔寨",
+                    "KH",
+                    "亚洲",
+                    "855",
+                    1
+                ],
+                [
+                    37,
+                    "Cameroon",
+                    "喀麦隆",
+                    "CM",
+                    "非洲",
+                    "237",
+                    1
+                ],
+                [
+                    38,
+                    "Canada",
+                    "加拿大",
+                    "CA",
+                    "北美洲",
+                    "1",
+                    1
+                ],
+                [
+                    39,
+                    "Cape Verde",
+                    "佛得角",
+                    "CV",
+                    "非洲",
+                    "238",
+                    1
+                ],
+                [
+                    40,
+                    "Cayman Islands",
+                    "开曼群岛",
+                    "KY",
+                    "北美洲",
+                    "1345",
+                    1
+                ],
+                [
+                    41,
+                    "Central African Republic",
+                    "中非共和国",
+                    "CF",
+                    "非洲",
+                    "236",
+                    1
+                ],
+                [
+                    42,
+                    "Chad",
+                    "乍得",
+                    "TD",
+                    "非洲",
+                    "235",
+                    1
+                ],
+                [
+                    43,
+                    "Chile",
+                    "智利",
+                    "CL",
+                    "南美洲",
+                    "56",
+                    1
+                ],
+                [
+                    44,
+                    "China",
+                    "中国",
+                    "CN",
+                    "亚洲",
+                    "86",
+                    1
+                ],
+                [
+                    45,
+                    "Christmas Island",
+                    "圣延岛",
+                    "CX",
+                    "",
+                    "61",
+                    1
+                ],
+                [
+                    46,
+                    "Cocos (Keeling) Islands",
+                    "科科斯群岛",
+                    "CC",
+                    "大洋洲",
+                    "61",
+                    1
+                ],
+                [
+                    47,
+                    "Colombia",
+                    "哥伦比亚",
+                    "CO",
+                    "南美洲",
+                    "57",
+                    1
+                ],
+                [
+                    48,
+                    "Comoros",
+                    "科摩罗",
+                    "KM",
+                    "非洲",
+                    "269",
+                    1
+                ],
+                [
+                    49,
+                    "Congo",
+                    "刚果",
+                    "CG",
+                    "非洲",
+                    "242",
+                    1
+                ],
+                [
+                    50,
+                    "Congo, The Democratic Republic Of The",
+                    "刚果民主共和国",
+                    "ZR",
+                    "非洲",
+                    "243",
+                    1
+                ],
+                [
+                    51,
+                    "Cook Islands",
+                    "库克群岛",
+                    "CK",
+                    "大洋洲",
+                    "682",
+                    1
+                ],
+                [
+                    52,
+                    "Costa Rica",
+                    "哥斯达黎加",
+                    "CR",
+                    "北美洲",
+                    "506",
+                    1
+                ],
+                [
+                    53,
+                    "Cote D'Ivoire",
+                    "Cote D'Ivoire",
+                    "CI",
+                    "",
+                    "225",
+                    0
+                ],
+                [
+                    54,
+                    "Croatia (local name: Hrvatska)",
+                    "克罗地亚",
+                    "HR",
+                    "欧洲",
+                    "385",
+                    1
+                ],
+                [
+                    55,
+                    "Cuba",
+                    "古巴",
+                    "CU",
+                    "北美洲",
+                    "53",
+                    1
+                ],
+                [
+                    56,
+                    "Cyprus",
+                    "塞浦路斯",
+                    "CY",
+                    "亚洲",
+                    "357",
+                    1
+                ],
+                [
+                    57,
+                    "Czech Republic",
+                    "捷克",
+                    "CZ",
+                    "欧洲",
+                    "420",
+                    1
+                ],
+                [
+                    58,
+                    "Denmark",
+                    "丹麦",
+                    "DK",
+                    "欧洲",
+                    "45",
+                    1
+                ],
+                [
+                    59,
+                    "Djibouti",
+                    "吉布提",
+                    "DJ",
+                    "非洲",
+                    "253",
+                    1
+                ],
+                [
+                    60,
+                    "Dominica",
+                    "多米尼克国",
+                    "DM",
+                    "北美洲",
+                    "1767",
+                    1
+                ],
+                [
+                    61,
+                    "Dominican Republic",
+                    "多米尼加共和国",
+                    "DO",
+                    "欧洲",
+                    "1809",
+                    1
+                ],
+                [
+                    62,
+                    "East Timor",
+                    "东帝汶",
+                    "TP",
+                    "亚洲",
+                    "670",
+                    1
+                ],
+                [
+                    63,
+                    "Ecuador",
+                    "厄瓜多尔",
+                    "EC",
+                    "南美洲",
+                    "593",
+                    1
+                ],
+                [
+                    64,
+                    "Egypt",
+                    "埃及",
+                    "EG",
+                    "非洲",
+                    "20",
+                    1
+                ],
+                [
+                    65,
+                    "El Salvador",
+                    "萨尔瓦多",
+                    "SV",
+                    "南美洲",
+                    "503",
+                    1
+                ],
+                [
+                    66,
+                    "Equatorial Guinea",
+                    "赤道几内亚",
+                    "GQ",
+                    "非洲",
+                    "240",
+                    1
+                ],
+                [
+                    67,
+                    "Eritrea",
+                    "厄立特里亚国",
+                    "ER",
+                    "非洲",
+                    "291",
+                    1
+                ],
+                [
+                    68,
+                    "Estonia",
+                    "爱沙尼亚",
+                    "EE",
+                    "欧洲",
+                    "372",
+                    1
+                ],
+                [
+                    69,
+                    "Ethiopia",
+                    "埃塞俄比亚",
+                    "ET",
+                    "非洲",
+                    "251",
+                    1
+                ],
+                [
+                    70,
+                    "Falkland Islands (Malvinas)",
+                    "福克兰群岛",
+                    "FK",
+                    "",
+                    "500",
+                    1
+                ],
+                [
+                    71,
+                    "Faroe Islands",
+                    "法罗群岛",
+                    "FO",
+                    "欧洲",
+                    "298",
+                    1
+                ],
+                [
+                    72,
+                    "Fiji",
+                    "斐济",
+                    "FJ",
+                    "大洋洲",
+                    "679",
+                    1
+                ],
+                [
+                    73,
+                    "Finland",
+                    "芬兰",
+                    "FI",
+                    "欧洲",
+                    "358",
+                    1
+                ],
+                [
+                    74,
+                    "France",
+                    "法国",
+                    "FR",
+                    "欧洲",
+                    "33",
+                    1
+                ],
+                [
+                    75,
+                    "France Metropolitan",
+                    "法国大都会",
+                    "FX",
+                    "",
+                    "33",
+                    1
+                ],
+                [
+                    76,
+                    "French Guiana",
+                    "法属圭亚那",
+                    "GF",
+                    "南美洲",
+                    "594",
+                    1
+                ],
+                [
+                    77,
+                    "French Polynesia",
+                    "法属玻里尼西亚",
+                    "PF",
+                    "",
+                    "689",
+                    1
+                ],
+                [
+                    78,
+                    "French Southern Territories",
+                    "French Southern Territories",
+                    "TF",
+                    "",
+                    "",
+                    0
+                ],
+                [
+                    79,
+                    "Gabon",
+                    "加蓬",
+                    "GA",
+                    "非洲",
+                    "241",
+                    1
+                ],
+                [
+                    80,
+                    "Gambia",
+                    "冈比亚",
+                    "GM",
+                    "非洲",
+                    "220",
+                    0
+                ],
+                [
+                    81,
+                    "Georgia",
+                    "格鲁吉亚",
+                    "GE",
+                    "亚洲",
+                    "995",
+                    1
+                ],
+                [
+                    82,
+                    "Germany",
+                    "德国",
+                    "DE",
+                    "欧洲",
+                    "49",
+                    1
+                ],
+                [
+                    83,
+                    "Ghana",
+                    "加纳",
+                    "GH",
+                    "非洲",
+                    "233",
+                    1
+                ],
+                [
+                    84,
+                    "Gibraltar",
+                    "直布罗陀",
+                    "GI",
+                    "欧洲",
+                    "350",
+                    1
+                ],
+                [
+                    85,
+                    "Greece",
+                    "希腊",
+                    "GR",
+                    "欧洲",
+                    "30",
+                    1
+                ],
+                [
+                    86,
+                    "Greenland",
+                    "格陵兰",
+                    "GL",
+                    "",
+                    "299",
+                    1
+                ],
+                [
+                    87,
+                    "Grenada",
+                    "格林纳达",
+                    "GD",
+                    "北美洲",
+                    "1473",
+                    1
+                ],
+                [
+                    88,
+                    "Guadeloupe",
+                    "瓜德罗普岛",
+                    "GP",
+                    "",
+                    "590",
+                    1
+                ],
+                [
+                    89,
+                    "Guam",
+                    "关岛",
+                    "GU",
+                    "大洋洲",
+                    "1671",
+                    1
+                ],
+                [
+                    90,
+                    "Guatemala",
+                    "危地马拉",
+                    "GT",
+                    "北美洲",
+                    "502",
+                    1
+                ],
+                [
+                    91,
+                    "Guinea",
+                    "几内亚",
+                    "GN",
+                    "非洲",
+                    "224",
+                    1
+                ],
+                [
+                    92,
+                    "Guinea-Bissau",
+                    "几内亚比绍",
+                    "GW",
+                    "",
+                    "245",
+                    1
+                ],
+                [
+                    93,
+                    "Guyana",
+                    "圭亚那",
+                    "GY",
+                    "南美洲",
+                    "592",
+                    1
+                ],
+                [
+                    94,
+                    "Haiti",
+                    "海地",
+                    "HT",
+                    "北美洲",
+                    "509",
+                    1
+                ],
+                [
+                    95,
+                    "Heard and Mc Donald Islands",
+                    "Heard and Mc Donald Islands",
+                    "HM",
+                    "",
+                    "",
+                    0
+                ],
+                [
+                    96,
+                    "Honduras",
+                    "洪都拉斯",
+                    "HN",
+                    "北美洲",
+                    "504",
+                    1
+                ],
+                [
+                    97,
+                    "Hong Kong",
+                    "香港",
+                    "HK",
+                    "亚洲",
+                    "852",
+                    1
+                ],
+                [
+                    98,
+                    "Hungary",
+                    "匈牙利",
+                    "HU",
+                    "欧洲",
+                    "36",
+                    1
+                ],
+                [
+                    99,
+                    "Iceland",
+                    "冰岛",
+                    "IS",
+                    "欧洲",
+                    "354",
+                    1
+                ],
+                [
+                    100,
+                    "India",
+                    "印度",
+                    "IN",
+                    "亚洲",
+                    "91",
+                    1
+                ],
+                [
+                    101,
+                    "Indonesia",
+                    "印度尼西亚",
+                    "ID",
+                    "亚洲",
+                    "62",
+                    1
+                ],
+                [
+                    102,
+                    "Iran (Islamic Republic of)",
+                    "Iran (Islamic Republic of)",
+                    "IR",
+                    "",
+                    "98",
+                    0
+                ],
+                [
+                    103,
+                    "Iraq",
+                    "伊拉克",
+                    "IQ",
+                    "亚洲",
+                    "964",
+                    1
+                ],
+                [
+                    104,
+                    "Ireland",
+                    "爱尔兰",
+                    "IE",
+                    "欧洲",
+                    "353",
+                    1
+                ],
+                [
+                    105,
+                    "Isle of Man",
+                    "英国属地曼岛",
+                    "IM",
+                    "",
+                    "",
+                    1
+                ],
+                [
+                    106,
+                    "Israel",
+                    "以色列",
+                    "IL",
+                    "亚洲",
+                    "972",
+                    1
+                ],
+                [
+                    107,
+                    "Italy",
+                    "意大利",
+                    "IT",
+                    "欧洲",
+                    "39",
+                    1
+                ],
+                [
+                    108,
+                    "Jamaica",
+                    "牙买加",
+                    "JM",
+                    "北美洲",
+                    "1876",
+                    1
+                ],
+                [
+                    109,
+                    "Japan",
+                    "日本",
+                    "JP",
+                    "亚洲",
+                    "81",
+                    1
+                ],
+                [
+                    110,
+                    "Jordan",
+                    "约旦",
+                    "JO",
+                    "亚洲",
+                    "962",
+                    1
+                ],
+                [
+                    111,
+                    "Kazakhstan",
+                    "哈萨克",
+                    "KZ",
+                    "亚洲",
+                    "7",
+                    1
+                ],
+                [
+                    112,
+                    "Kenya",
+                    "肯尼亚",
+                    "KE",
+                    "非洲",
+                    "254",
+                    1
+                ],
+                [
+                    113,
+                    "Kiribati",
+                    "吉尔巴斯",
+                    "KI",
+                    "",
+                    "686",
+                    1
+                ],
+                [
+                    114,
+                    "Kuwait",
+                    "科威特",
+                    "KW",
+                    "亚洲",
+                    "965",
+                    1
+                ],
+                [
+                    115,
+                    "Kyrgyzstan",
+                    "吉尔吉斯",
+                    "KG",
+                    "亚洲",
+                    "996",
+                    1
+                ],
+                [
+                    116,
+                    "Lao People's Democratic Republic",
+                    "老挝",
+                    "LA",
+                    "",
+                    "856",
+                    11
+                ],
+                [
+                    117,
+                    "Latvia",
+                    "拉脱维亚",
+                    "LV",
+                    "欧洲",
+                    "371",
+                    1
+                ],
+                [
+                    118,
+                    "Lebanon",
+                    "黎巴嫩",
+                    "LB",
+                    "亚洲",
+                    "961",
+                    1
+                ],
+                [
+                    119,
+                    "Lesotho",
+                    "莱索托",
+                    "LS",
+                    "非洲",
+                    "266",
+                    1
+                ],
+                [
+                    120,
+                    "Liberia",
+                    "利比里亚",
+                    "LR",
+                    "非洲",
+                    "231",
+                    1
+                ],
+                [
+                    121,
+                    "Libyan Arab Jamahiriya",
+                    "利比亚",
+                    "LY",
+                    "非洲",
+                    "218",
+                    1
+                ],
+                [
+                    122,
+                    "Liechtenstein",
+                    "列支敦士登",
+                    "LI",
+                    "欧洲",
+                    "423",
+                    1
+                ],
+                [
+                    123,
+                    "Lithuania",
+                    "立陶宛",
+                    "LT",
+                    "欧洲",
+                    "370",
+                    1
+                ],
+                [
+                    124,
+                    "Luxembourg",
+                    "卢森堡",
+                    "LU",
+                    "欧洲",
+                    "352",
+                    1
+                ],
+                [
+                    125,
+                    "Macau",
+                    "澳门地区",
+                    "MO",
+                    "亚洲",
+                    "853",
+                    1
+                ],
+                [
+                    126,
+                    "Madagascar",
+                    "马达加斯加",
+                    "MG",
+                    "非洲",
+                    "261",
+                    1
+                ],
+                [
+                    127,
+                    "Malawi",
+                    "马拉维",
+                    "MW",
+                    "非洲",
+                    "265",
+                    1
+                ],
+                [
+                    128,
+                    "Malaysia",
+                    "马来西亚",
+                    "MY",
+                    "亚洲",
+                    "60",
+                    1
+                ],
+                [
+                    129,
+                    "Maldives",
+                    "马尔代夫",
+                    "MV",
+                    "亚洲",
+                    "960",
+                    1
+                ],
+                [
+                    130,
+                    "Mali",
+                    "马里",
+                    "ML",
+                    "非洲",
+                    "223",
+                    1
+                ],
+                [
+                    131,
+                    "Malta",
+                    "马尔他",
+                    "MT",
+                    "欧洲",
+                    "356",
+                    1
+                ],
+                [
+                    132,
+                    "Marshall Islands",
+                    "马绍尔群岛",
+                    "MH",
+                    "大洋洲",
+                    "692",
+                    1
+                ],
+                [
+                    133,
+                    "Martinique",
+                    "马提尼克岛",
+                    "MQ",
+                    "北美洲",
+                    "596",
+                    1
+                ],
+                [
+                    134,
+                    "Mauritania",
+                    "毛里塔尼亚",
+                    "MR",
+                    "非洲",
+                    "222",
+                    1
+                ],
+                [
+                    135,
+                    "Mauritius",
+                    "毛里求斯",
+                    "MU",
+                    "非洲",
+                    "230",
+                    1
+                ],
+                [
+                    136,
+                    "Mayotte",
+                    "马约特",
+                    "YT",
+                    "",
+                    "269",
+                    1
+                ],
+                [
+                    137,
+                    "Mexico",
+                    "墨西哥",
+                    "MX",
+                    "北美洲",
+                    "52",
+                    1
+                ],
+                [
+                    138,
+                    "Micronesia",
+                    "密克罗尼西亚",
+                    "FM",
+                    "大洋洲",
+                    "691",
+                    1
+                ],
+                [
+                    139,
+                    "Moldova",
+                    "摩尔多瓦",
+                    "MD",
+                    "欧洲",
+                    "373",
+                    1
+                ],
+                [
+                    140,
+                    "Monaco",
+                    "摩纳哥",
+                    "MC",
+                    "欧洲",
+                    "377",
+                    1
+                ],
+                [
+                    141,
+                    "Mongolia",
+                    "外蒙古",
+                    "MN",
+                    "亚洲",
+                    "976",
+                    1
+                ],
+                [
+                    142,
+                    "Montenegro",
+                    "Montenegro",
+                    "MNE",
+                    "",
+                    "382",
+                    0
+                ],
+                [
+                    143,
+                    "Montserrat",
+                    "蒙特色纳",
+                    "MS",
+                    "",
+                    "1664",
+                    1
+                ],
+                [
+                    144,
+                    "Morocco",
+                    "摩洛哥",
+                    "MA",
+                    "非洲",
+                    "212",
+                    1
+                ],
+                [
+                    145,
+                    "Mozambique",
+                    "莫桑比克",
+                    "MZ",
+                    "非洲",
+                    "258",
+                    1
+                ],
+                [
+                    146,
+                    "Myanmar",
+                    "缅甸",
+                    "MM",
+                    "亚洲",
+                    "95",
+                    1
+                ],
+                [
+                    147,
+                    "Namibia",
+                    "那米比亚",
+                    "NA",
+                    "非洲",
+                    "264",
+                    1
+                ],
+                [
+                    148,
+                    "Nauru",
+                    "瑙鲁",
+                    "NR",
+                    "大洋洲",
+                    "674",
+                    1
+                ],
+                [
+                    149,
+                    "Nepal",
+                    "尼泊尔",
+                    "NP",
+                    "亚洲",
+                    "977",
+                    1
+                ],
+                [
+                    150,
+                    "Netherlands",
+                    "荷兰",
+                    "NL",
+                    "欧洲",
+                    "31",
+                    1
+                ],
+                [
+                    151,
+                    "Netherlands Antilles",
+                    "荷兰安的列斯群岛",
+                    "AN",
+                    "",
+                    "599",
+                    1
+                ],
+                [
+                    152,
+                    "New Caledonia",
+                    "新加勒多尼亚",
+                    "NC",
+                    "",
+                    "687",
+                    1
+                ],
+                [
+                    153,
+                    "New Zealand",
+                    "新西兰",
+                    "NZ",
+                    "大洋洲",
+                    "64",
+                    1
+                ],
+                [
+                    154,
+                    "Nicaragua",
+                    "尼加拉瓜",
+                    "NI",
+                    "北美洲",
+                    "505",
+                    1
+                ],
+                [
+                    155,
+                    "Niger",
+                    "尼日尔",
+                    "NE",
+                    "非洲",
+                    "227",
+                    1
+                ],
+                [
+                    156,
+                    "Nigeria",
+                    "尼日利亚",
+                    "NG",
+                    "非洲",
+                    "234",
+                    1
+                ],
+                [
+                    157,
+                    "Niue",
+                    "纽鄂岛",
+                    "NU",
+                    "",
+                    "683",
+                    1
+                ],
+                [
+                    158,
+                    "Norfolk Island",
+                    "诺福克岛",
+                    "NF",
+                    "",
+                    "672",
+                    1
+                ],
+                [
+                    159,
+                    "North Korea",
+                    "朝鲜",
+                    "KP",
+                    "亚洲",
+                    "850",
+                    1
+                ],
+                [
+                    160,
+                    "Northern Mariana Islands",
+                    "北马里亚纳群岛",
+                    "MP",
+                    "",
+                    "1670",
+                    1
+                ],
+                [
+                    161,
+                    "Norway",
+                    "挪威",
+                    "NO",
+                    "欧洲",
+                    "47",
+                    1
+                ],
+                [
+                    162,
+                    "Oman",
+                    "阿曼",
+                    "OM",
+                    "亚洲",
+                    "968",
+                    1
+                ],
+                [
+                    163,
+                    "Pakistan",
+                    "巴基斯坦",
+                    "PK",
+                    "亚洲",
+                    "92",
+                    1
+                ],
+                [
+                    164,
+                    "Palau",
+                    "帛琉",
+                    "PW",
+                    "",
+                    "680",
+                    1
+                ],
+                [
+                    165,
+                    "Palestine",
+                    "巴勒斯坦",
+                    "PS",
+                    "亚洲",
+                    "970",
+                    1
+                ],
+                [
+                    166,
+                    "Panama",
+                    "巴拿马",
+                    "PA",
+                    "北美洲",
+                    "507",
+                    1
+                ],
+                [
+                    167,
+                    "Papua New Guinea",
+                    "巴布亚新几内亚",
+                    "PG",
+                    "大洋洲",
+                    "675",
+                    1
+                ],
+                [
+                    168,
+                    "Paraguay",
+                    "巴拉圭",
+                    "PY",
+                    "南美洲",
+                    "595",
+                    1
+                ],
+                [
+                    169,
+                    "Peru",
+                    "秘鲁",
+                    "PE",
+                    "南美洲",
+                    "51",
+                    1
+                ],
+                [
+                    170,
+                    "Philippines",
+                    "菲律宾共和国",
+                    "PH",
+                    "亚洲",
+                    "63",
+                    1
+                ],
+                [
+                    171,
+                    "Pitcairn",
+                    "皮特凯恩岛",
+                    "PN",
+                    "",
+                    "872",
+                    1
+                ],
+                [
+                    172,
+                    "Poland",
+                    "波兰",
+                    "PL",
+                    "欧洲",
+                    "48",
+                    1
+                ],
+                [
+                    173,
+                    "Portugal",
+                    "葡萄牙",
+                    "PT",
+                    "欧洲",
+                    "351",
+                    1
+                ],
+                [
+                    174,
+                    "Puerto Rico",
+                    "波多黎各",
+                    "PR",
+                    "北美洲",
+                    "1787",
+                    1
+                ],
+                [
+                    175,
+                    "Qatar",
+                    "卡塔尔",
+                    "QA",
+                    "亚洲",
+                    "974",
+                    1
+                ],
+                [
+                    176,
+                    "Reunion",
+                    "Reunion",
+                    "RE",
+                    "",
+                    "262",
+                    0
+                ],
+                [
+                    177,
+                    "Romania",
+                    "罗马尼亚",
+                    "RO",
+                    "欧洲",
+                    "40",
+                    1
+                ],
+                [
+                    178,
+                    "Russian Federation",
+                    "俄罗斯联邦",
+                    "RU",
+                    "欧洲",
+                    "7",
+                    1
+                ],
+                [
+                    179,
+                    "Rwanda",
+                    "卢旺达",
+                    "RW",
+                    "非洲",
+                    "250",
+                    1
+                ],
+                [
+                    180,
+                    "Saint Kitts and Nevis",
+                    "圣吉斯和尼维斯",
+                    "KN",
+                    "",
+                    "1869",
+                    1
+                ],
+                [
+                    181,
+                    "Saint Lucia",
+                    "圣卢西亚",
+                    "LC",
+                    "南美洲",
+                    "1758",
+                    1
+                ],
+                [
+                    182,
+                    "Saint Vincent and the Grenadines",
+                    "圣文森和格林纳丁斯",
+                    "VC",
+                    "",
+                    "1784",
+                    1
+                ],
+                [
+                    183,
+                    "Samoa",
+                    "美属萨摩亚",
+                    "WS",
+                    "大洋洲",
+                    "685",
+                    1
+                ],
+                [
+                    184,
+                    "San Marino",
+                    "San Marino",
+                    "SM",
+                    "欧洲",
+                    "378",
+                    0
+                ],
+                [
+                    185,
+                    "Sao Tome and Principe",
+                    "圣多美和普林西比",
+                    "ST",
+                    "非洲",
+                    "",
+                    1
+                ],
+                [
+                    186,
+                    "Saudi Arabia",
+                    "沙特阿拉伯",
+                    "SA",
+                    "亚洲",
+                    "966",
+                    1
+                ],
+                [
+                    187,
+                    "Senegal",
+                    "塞内加尔",
+                    "SN",
+                    "非洲",
+                    "221",
+                    1
+                ],
+                [
+                    188,
+                    "Serbia",
+                    "塞尔维亚共和国",
+                    "RS",
+                    "欧洲",
+                    "381",
+                    1
+                ],
+                [
+                    189,
+                    "Seychelles",
+                    "塞锡尔群岛",
+                    "SC",
+                    "非洲",
+                    "248",
+                    1
+                ],
+                [
+                    190,
+                    "Sierra Leone",
+                    "塞拉利昂",
+                    "SL",
+                    "非洲",
+                    "232",
+                    1
+                ],
+                [
+                    191,
+                    "Singapore",
+                    "新加坡",
+                    "SG",
+                    "亚洲",
+                    "65",
+                    1
+                ],
+                [
+                    192,
+                    "Slovakia (Slovak Republic)",
+                    "斯洛伐克（斯洛伐克人的共和国）",
+                    "SK",
+                    "",
+                    "421",
+                    1
+                ],
+                [
+                    193,
+                    "Slovenia",
+                    "斯洛文尼亚",
+                    "SI",
+                    "欧洲",
+                    "386",
+                    1
+                ],
+                [
+                    194,
+                    "Solomon Islands",
+                    "索罗门群岛",
+                    "SB",
+                    "",
+                    "677",
+                    1
+                ],
+                [
+                    195,
+                    "Somalia",
+                    "索马里",
+                    "SO",
+                    "非洲",
+                    "252",
+                    1
+                ],
+                [
+                    196,
+                    "South Africa",
+                    "南非",
+                    "ZA",
+                    "非洲",
+                    "27",
+                    1
+                ],
+                [
+                    197,
+                    "South Korea",
+                    "韩国",
+                    "KR",
+                    "亚洲",
+                    "82",
+                    1
+                ],
+                [
+                    198,
+                    "Spain",
+                    "西班牙",
+                    "ES",
+                    "欧洲",
+                    "34",
+                    1
+                ],
+                [
+                    199,
+                    "Sri Lanka",
+                    "斯里兰卡",
+                    "LK",
+                    "亚洲",
+                    "94",
+                    1
+                ],
+                [
+                    200,
+                    "St. Helena",
+                    "圣海伦娜",
+                    "SH",
+                    "",
+                    "290",
+                    1
+                ],
+                [
+                    201,
+                    "St. Pierre and Miquelon",
+                    "圣皮埃尔和密克罗",
+                    "PM",
+                    "",
+                    "508",
+                    1
+                ],
+                [
+                    202,
+                    "Sudan",
+                    "苏丹",
+                    "SD",
+                    "非洲",
+                    "249",
+                    1
+                ],
+                [
+                    203,
+                    "Suriname",
+                    "苏里南",
+                    "SR",
+                    "",
+                    "597",
+                    1
+                ],
+                [
+                    204,
+                    "Svalbard and Jan Mayen Islands",
+                    "冷岸和央麦恩群岛",
+                    "SJ",
+                    "",
+                    "",
+                    1
+                ],
+                [
+                    205,
+                    "Swaziland",
+                    "斯威士兰",
+                    "SZ",
+                    "非洲",
+                    "268",
+                    1
+                ],
+                [
+                    206,
+                    "Sweden",
+                    "瑞典",
+                    "SE",
+                    "欧洲",
+                    "46",
+                    1
+                ],
+                [
+                    207,
+                    "Switzerland",
+                    "瑞士",
+                    "CH",
+                    "欧洲",
+                    "41",
+                    1
+                ],
+                [
+                    208,
+                    "Syrian Arab Republic",
+                    "叙利亚",
+                    "SY",
+                    "亚洲",
+                    "963",
+                    1
+                ],
+                [
+                    209,
+                    "Taiwan",
+                    "台湾地区",
+                    "TW",
+                    "亚洲",
+                    "886",
+                    1
+                ],
+                [
+                    210,
+                    "Tajikistan",
+                    "塔吉克",
+                    "TJ",
+                    "亚洲",
+                    "992",
+                    1
+                ],
+                [
+                    211,
+                    "Tanzania",
+                    "坦桑尼亚",
+                    "TZ",
+                    "非洲",
+                    "255",
+                    1
+                ],
+                [
+                    212,
+                    "Thailand",
+                    "泰国",
+                    "TH",
+                    "亚洲",
+                    "66",
+                    1
+                ],
+                [
+                    213,
+                    "The former Yugoslav Republic of Macedonia",
+                    "前马其顿南斯拉夫共和国",
+                    "MK",
+                    "",
+                    "389",
+                    1
+                ],
+                [
+                    214,
+                    "Togo",
+                    "多哥",
+                    "TG",
+                    "非洲",
+                    "228",
+                    1
+                ],
+                [
+                    215,
+                    "Tokelau",
+                    "托克劳",
+                    "TK",
+                    "大洋洲",
+                    "690",
+                    1
+                ],
+                [
+                    216,
+                    "Tonga",
+                    "汤加",
+                    "TO",
+                    "大洋洲",
+                    "676",
+                    1
+                ],
+                [
+                    217,
+                    "Trinidad and Tobago",
+                    "千里达托贝哥共和国",
+                    "TT",
+                    "北美洲",
+                    "1868",
+                    1
+                ],
+                [
+                    218,
+                    "Tunisia",
+                    "北非共和国",
+                    "TN",
+                    "非洲",
+                    "216",
+                    1
+                ],
+                [
+                    219,
+                    "Turkey",
+                    "土耳其",
+                    "TR",
+                    "亚洲",
+                    "90",
+                    1
+                ],
+                [
+                    220,
+                    "Turkmenistan",
+                    "土库曼",
+                    "TM",
+                    "亚洲",
+                    "993",
+                    1
+                ],
+                [
+                    221,
+                    "Turks and Caicos Islands",
+                    "土克斯和开科斯群岛",
+                    "TC",
+                    "",
+                    "1649",
+                    1
+                ],
+                [
+                    222,
+                    "Tuvalu",
+                    "图瓦卢",
+                    "TV",
+                    "",
+                    "688",
+                    1
+                ],
+                [
+                    223,
+                    "Uganda",
+                    "乌干达",
+                    "UG",
+                    "非洲",
+                    "256",
+                    1
+                ],
+                [
+                    224,
+                    "Ukraine",
+                    "乌克兰",
+                    "UA",
+                    "欧洲",
+                    "380",
+                    1
+                ],
+                [
+                    225,
+                    "United Arab Emirates",
+                    "阿拉伯联合酋长国",
+                    "AE",
+                    "亚洲",
+                    "971",
+                    1
+                ],
+                [
+                    226,
+                    "United Kingdom",
+                    "英国",
+                    "GB",
+                    "欧洲",
+                    "44",
+                    1
+                ],
+                [
+                    227,
+                    "United States",
+                    "美国",
+                    "US",
+                    "北美洲",
+                    "1",
+                    1
+                ],
+                [
+                    228,
+                    "United States Minor Outlying Islands",
+                    "美国小离岛",
+                    "UM",
+                    "",
+                    "",
+                    1
+                ],
+                [
+                    229,
+                    "Uruguay",
+                    "乌拉圭",
+                    "UY",
+                    "南美洲",
+                    "598",
+                    1
+                ],
+                [
+                    230,
+                    "Uzbekistan",
+                    "乌兹别克斯坦",
+                    "UZ",
+                    "亚洲",
+                    "998",
+                    1
+                ],
+                [
+                    231,
+                    "Vanuatu",
+                    "瓦努阿图",
+                    "VU",
+                    "大洋洲",
+                    "678",
+                    1
+                ],
+                [
+                    232,
+                    "Vatican City State (Holy See)",
+                    "梵蒂冈(罗马教廷)",
+                    "VA",
+                    "",
+                    "39",
+                    1
+                ],
+                [
+                    233,
+                    "Venezuela",
+                    "委内瑞拉",
+                    "VE",
+                    "南美洲",
+                    "58",
+                    1
+                ],
+                [
+                    234,
+                    "Vietnam",
+                    "越南",
+                    "VN",
+                    "亚洲",
+                    "84",
+                    1
+                ],
+                [
+                    235,
+                    "Virgin Islands (British)",
+                    "维尔京群岛(英国)",
+                    "VG",
+                    "",
+                    "1284",
+                    1
+                ],
+                [
+                    236,
+                    "Virgin Islands (U.S.)",
+                    "维尔京群岛(美国)",
+                    "VI",
+                    "",
+                    "1340",
+                    1
+                ],
+                [
+                    237,
+                    "Wallis And Futuna Islands",
+                    "沃利斯和富图纳群岛",
+                    "WF",
+                    "",
+                    "681",
+                    1
+                ],
+                [
+                    238,
+                    "Western Sahara",
+                    "西撒哈拉",
+                    "EH",
+                    "非洲",
+                    "685",
+                    1
+                ],
+                [
+                    239,
+                    "Yemen",
+                    "也门",
+                    "YE",
+                    "亚洲",
+                    "967",
+                    1
+                ],
+                [
+                    240,
+                    "Yugoslavia",
+                    "南斯拉夫",
+                    "YU",
+                    "",
+                    "381",
+                    1
+                ],
+                [
+                    241,
+                    "Zambia",
+                    "赞比亚",
+                    "ZM",
+                    "非洲",
+                    "260",
+                    1
+                ],
+                [
+                    242,
+                    "Zimbabwe",
+                    "津巴布韦",
+                    "ZW",
+                    "非洲",
+                    "263",
+                    1
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,472 @@
+{
+  "login": {
+    "title": "登录",
+    "send_sms_to_fast": "发送短信验证码太频繁了，请稍后再试"
+  },
+  "CheckSMSCode": {
+    "welcome": "欢迎  回来!",
+    "login_button": "登录",
+    "signup_button": "注册",
+    "title": "验证账户信息",
+    "check_account_title1": "我们已向",
+    "check_account_title2": "发送了验证码\n请输入刚才你收到的验证码",
+    "check_account_code": "输入验证码",
+    "re_send": "重新发送",
+    "next": "下一步"
+  },
+  "PassWordLogin": {
+    "title": "请输入密码",
+    "pawword_error": "密码有误，请检查！！",
+    "please_input_password": "请输入密码",
+    "please_input_password_again": "请再次输入密码",
+    "forget_password": "忘记密码",
+    "SMS_code_login": "验证码登录"
+  },
+  "ForgetPasswordPage": {
+    "title": "找回您的洋葱账户信息",
+    "pawword_error": "两次密码不一致，请检查！！"
+  },
+  "PasswordSuccess": {
+    "title": "密码设置成功",
+    "finish": "完成"
+  },
+  "login_home": {
+    "title": "洋葱",
+    "login": "登录",
+    "no_account": "没有账户?",
+    "create_account": "创建一个"
+  },
+  "HasRegPage": {
+    "title": "手机号验证信息",
+    "detail": "该手机号码已经注册了洋葱电话，您可以继续使用该手机进行登录，或者更换新的手机号重新注册",
+    "going_login": "继续登录",
+    "change_phone": "更换手机号"
+  },
+  "CreateAccount": {
+    "title": "创建账号",
+    "placeString": "请输入手机号码进行验证",
+    "areaCode_title": "地区号",
+    "input_phone_placeholder": "请输入手机号码",
+    "input_phone_error": "此电话号码有误，请检查国家/地区代码和电话号码"
+  },
+  "tab": {
+    "message_tab": "短信",
+    "phone_tab": "通话",
+    "connect_tab": "联系人"
+  },
+  "connect_tab": {
+    "title": "联系人",
+    "my_title": "我的联系人",
+    "all": "全部",
+    "address": "通讯录",
+    "search_placeholder": "用户, 电话号码",
+    "tip1_1": "添加您的好友",
+    "tip1_2": "从这里开始",
+    "tip2_1": "洋葱电话薄",
+    "tip2_2": "可以在这里进行查看",
+    "sas": "特别关注",
+    "person_detail": "查看联系人",
+    "person_edit": "编辑联系人",
+    "add_contract": "添加联系人",
+    "my_friend": "我的好友",
+    "all_friend": "全部联系人"
+  },
+  "phone_tab": {
+    "title": "通话",
+    "last_call": "近期通话",
+    "connect": "联系人",
+    "tip1_1": "拨打洋葱电话到手机",
+    "tip1_2": "以合理的资费拨打全球电话号码",
+    "tip1_3": "获取洋葱币",
+    "comeform": "来自通讯录",
+    "empty_tip1": "如果要拨打洋葱电话",
+    "empty_tip2": "请点击右上方",
+    "empty_tip3": "并选取联系人",
+    "empty_tip4": "或直接点击拨号键盘直接拨号"
+  },
+  "AddressList" : {
+    "from_local": "来自通讯录",
+    "invated": "邀请",
+    "empty_tip1": "请在手机设置中同步通讯录",
+    "empty_tip2": "方便同好友联系",
+    "empty_tip3": "告诉朋友关于洋葱OnionCall",
+    "empty_tip4": "同步手机通讯录",
+    "find_from_local": "同步你的通讯录在好友洋葱上查找"
+  },
+  "ContactList": {
+    "empty_tip1": "请点击右上方",
+    "empty_tip2": "图标添加洋葱好友",
+    "empty_tip3": "告诉朋友关于洋葱OnionCall",
+    "empty_tip4": "添加洋葱好友"
+  },
+  "CallPhonePage": {
+    "title": "国家地区名字",
+    "phoneInput": "输入要拨打的号码"
+  },
+  "ZoneSelect": {
+    "search_placeholder": "区号、地区名字"
+  },
+  "SearchPage": {
+    "title": "搜索",
+    "no_contract": "暂无联系人！",
+    "save_contract_to_cont": "将号码保存至洋葱联系人",
+    "save_phone": "添加电话号码",
+  },
+  "message_tab": {
+    "title": "短信",
+    "tip1_1": "洋葱商城",
+    "tip1_2": "请挑选你喜欢的洋葱号码",
+    "sas": "特别关注",
+    "sas_disable": "取消关注",
+    "person_detail": "查看个人资料",
+    "hide_message": "隐藏对话",
+    "delete_message": "删除对话",
+    "ban_user": "阻止来电",
+    "not_ban_user": "允许来电",
+    "photo": "图片",
+    "team": "洋葱团队",
+    "empty_tip1": "请点击右上方",
+    "empty_tip2": "开始新的对话",
+    "empty_tip3": "告诉朋友关于洋葱OnionCall",
+    "empty_tip4": "开始聊天",
+    "forcus": "关注",
+    "message": "短信"
+  },
+  "messagePage": {
+    "rende_sms_string": "申请号码",
+    "get_phone_string": "获取洋葱专属电话号码",
+    "get_phone_detail_string": "所有号码均支持语音,电话,短信及彩信",
+    "error_phone_code": "接收号码不正确",
+    "contract_type_0": "联系人",
+    "contract_type_1": "本地通讯录",
+    "contract_type_2": "陌生用户",
+    "select_get_message_phone": "选择短信接收号码",
+    "save_to_local": "保持图片到本地相册",
+    "save_success": "保存成功",
+    "save_faile": "保存失败",
+    "search": "搜索",
+    "ring": "响铃",
+    "stop": "阻止",
+    "delete": "删除",
+    "from_phone_to_phone_1": "通过",
+    "from_phone_to_phone_2": "发送至",
+    "newMessage": "新短信",
+    "get_phone": "收件人",
+    "ad_tip_1": "获取洋葱专属电话号码",
+    "ad_tip_2": "所有号码均支持语音,电话,短信及彩信",
+    "ad_tip_3": "申请号码",
+    "list_tip_1_1": "获取洋葱币",
+    "list_tip_1_2": "邀请好友免费获取洋葱币",
+    "list_tip_1_3": "低廉话费，畅拨全球",
+    "list_tip_2_1": "邀请好友加入洋葱",
+    "list_tip_2_2": "领取免费洋葱币",
+    "list_tip_2_3": "低廉话费，畅拨全球",
+    "default_phone": "洋葱号码",
+    "no_name_phone": "匿名电话",
+    "main_phone": "主叫号码",
+    "select_callout_phone": "选择呼出号码",
+    "select_get_phone": "选择接收号码",
+    "callout": "呼出"
+  },
+  "PerMissions": {
+    "contacts": "通讯录",
+    "read_contacts": "该程序需要获取您的通讯录权限"
+  },
+  "selectPhone": {
+    "title": "选择呼叫号码",
+    "getnorePhone": "申请号码",
+    "getNativePhone": "获取洋葱专属电话号码",
+    "getNativePhoneTitle": "所有号码均支持语音,电话,短信及彩信",
+    "mainPhone": "主叫号码",
+    "nickName": "匿名电话号码",
+    "ycPhoneNo": "洋葱号码"
+  },
+  "userPage": {
+    "title": "个人中心",
+    "logout": "退出",
+    "is_logout": "是否退出当前用户和应用程序设置？",
+    "online": "在线",
+    "miss_money": "洋葱币(余额)",
+    "person_detail": "洋葱个人资料",
+    "person_phone": "洋葱号码",
+    "person_detail_d": "设置你的个性化资料，让朋友找到你",
+    "save_voice": "电话录音",
+    "setting": "设置",
+    "setting_detail": "账户、通话、语言、外观、广告设置",
+    "help": "帮助和反馈",
+    "about": "关于洋葱"
+  },
+  "SettingPage": {
+    "title": "设置",
+    "accountAndSafe": "账户和安全",
+    "callPhone": "通话",
+    "voice": "通知和提示音",
+    "soll": "外观",
+    "account": "联系人",
+    "launage": "语言",
+    "ads": "广告设置",
+    "cache": "清除聊天记录"
+  },
+  "AccountAndSafePage": {
+    "title": "账户和安全",
+    "bind_email": "绑定邮箱地址",
+    "login_password_manage": "登录密码管理",
+    "login_password_manage_detil": "登录洋葱app使用的密码",
+    "password_lock": "应用密码锁",
+    "password_lock_detail": "启动时需密码登录，保护隐私安全",
+    "hide_modal": "隐身保护"
+  },
+  "PasswordLockPage": {
+    "title": "密码锁",
+    "openLock": "开启密码锁",
+    "changeLockPassword": "更改密码",
+    "auto_lock": "自动锁定",
+    "setTimeTitle": "设置锁定时间",
+    "5mim": "离开5分钟以后",
+    "30mim": "离开30分钟以后",
+    "1hour": "离开1小时",
+    "5hour": "离开5小时"
+  },
+  "ChangeLockPasswordPage": {
+    "title": "密码锁设置",
+    "title2": "密码锁",
+    "inputPassword": "请输入新密码",
+    "inputOrginPassword": "请输入原密码",
+    "inputPasswordAgain": "再次输入密码",
+    "inputOldPassword": "请输入密码",
+    "lockpasswordError": "密码位数只能为4位",
+    "passwordError1": "两次密码不一样",
+    "passwordError2": "密码验证失败",
+    "passwordError3": "密码验证失败",
+    "passwordError4": "密码验证失败"
+  },
+  "PrivacyPage": {
+    "title": "隐私保护",
+    "phoneNum": "电话号码",
+    "phoneNumDetail": "其他用户在洋葱上可以通过电话号码找到你",
+    "nameSearch": "洋葱名查询",
+    "nameSearchDetail": "其他用户在洋葱上可以通过电话号码找到你",
+    "searchResult": "显示在搜索结果中",
+    "searchResultDetail": "显示在没有聊过天用户的搜索结果中",
+    "personDetailShow": "个人资料展示",
+    "saveSure": "确认",
+    "all": "所有人",
+    "friend": "我的好友",
+    "friendAndContract": "好友和联系人"
+  },
+  "PhoneSettingPage": {
+    "title": "通话设置",
+    "phoneComing": "来电显示",
+    "phoneComingChange": "呼叫转移",
+    "flatePhone": "过滤陌生电话与短信",
+    "noName": "匿名电话",
+    "phonePrice": "呼叫费率",
+    "all_No": "拨打电话全部显示匿名",
+    "phonePriceDetail": "查询资费信息"
+  },
+  "PhonePricePage": {
+    "title": "呼叫费率",
+    "title2": "请输入电话号码进行查询"
+  },
+  "LaunagePage": {
+    "title": "语言设置",
+    "device_launage": "设备语言 - Device Language",
+    "zht_launage": "中文（简体）- Chinese（Simplified）",
+    "zhtf_launage": "中文（繁体）- Chinese（Simplified）",
+    "en_launage": "English - English",
+    "saveSure": "应用"
+  },
+  "VoiceAndNotificationPage": {
+    "title": "通知和提示音",
+    "messageNotice": "聊天通知",
+    "messageNoticeDetail": "接收新消息的推送通知",
+    "noticationNotice_title": "推送通知",
+    "appNotice": "应用内置音效",
+    "SMSNotice": "短信通知",
+    "SMSNoticeDetail": "收到新消息时播放声音",
+    "phoneNotice": "通话通知",
+    "phoneNoticeDetail": "接收推送通话通知时播放声音",
+    "previceNotice_title": "预览通知",
+    "prviceNotice": "推送通知预览",
+    "prviceNoticeDetail": "不使用时，显示消息提醒和横幅式消息预览",
+    "noNotice_title": "请勿打扰",
+    "showMessageInNo": "显示聊天通知",
+    "showMessageInNoDetail":"启用“请勿打扰”时接收推送和应用内横幅通知",
+    "showPhoneInNo": "显示通话通知",
+    "showPhoneInNoDetail": "启用“请勿打扰”时接收推送通话通知"
+  },
+  "VoiceAndNoticationAppPage": {
+    "title": "应用内置音效",
+    "voice": "声音",
+    "shock": "震动"
+  },
+  "ContractSettingPage": {
+    "title": "联系人",
+    "async_contract": "同步联系人",
+    "ban_contract": "被阻止的联系人"
+  },
+  "BanContractSettingPage": {
+    "title": "被阻止的联系人",
+    "cancel_ban": "取消阻止",
+    "delete_contract": "删除联系人"
+  },
+  "HelpPage": {
+    "title": "帮助和反馈",
+    "if_like_support": "喜欢洋葱，留个好评吧",
+    "if_like_support_detail": "查询资费信息",
+    "help_live": "洋葱使用技巧",
+    "FAQ": "FAQ",
+    "support_question":"报告问题",
+    "legal": "服务条款",
+    "public": "隐私政策",
+    "thank_title": "谢谢您",
+    "thank_content1": "如果洋葱让您沟通更方便，帮您节省话费，请留个好评吧。",
+    "thank_content2": "您的好评就是我们的动力，我们会努力把洋葱做更好。",
+    "thank_button": "写评语"
+  },
+  "SupportHelpPage": {
+    "title": "报告问题",
+    "hello": "你好  ",
+    "support_placeholder": "向我们报告错误"
+  },
+  "AboutPage": {
+    "title": "关于洋葱"
+  },
+  "UserDetailPage": {
+    "title": "个人详细资料",
+    "share_person_detail": "分享个人信息",
+    "person_detail": "个人信息",
+    "app_user_name": "洋葱用户名",
+    "other": "其他",
+    "address": "位置",
+    "birthday": "生日",
+    "register_phone": "注册电话",
+    "find_you": "可以找到你的其他方式",
+    "help": "帮助和反馈",
+    "copy": "复制",
+    "edit": "编辑",
+    "copySuccess": "复制成功"
+  },
+  "ClientDetail": {
+    "title": "个人信息中心",
+    "newContract": "新建联系人",
+    "updateContract": "更新联系人"
+  },
+  "SharePage": {
+    "title": "分享洋葱",
+    "copyToClip": "复制到剪贴板",
+    "copyToClipDetail": "https://onion.djoad/jiadng.djoad",
+    "QRCode": "QR代码",
+    "QRCodeDetail": "扫描或显示我的代码",
+    "more": "更多",
+    "moreDetail": "发送短信、电子邮件或通过其他应用发送",
+    "btitle": "通过分享你的个人资料链接，邀请你的好友一起使用洋葱，畅游全球每个角落"
+  },
+  "QRCodePage": {
+    "title": "我的QR",
+    "scan": "扫描",
+    "more": "更多",
+    "share": "分享",
+    "save": "保存",
+    "reset": "重制"
+  },
+  "QRCodeScannerPage": {
+    "title": "扫描QR",
+    "pleaceCameraToScanner": "请将镜头对准QR"
+  },
+  "ActionMessagePage": {
+    "title": "洋葱团队",
+    "titleDetail": "资讯简介"
+  },
+  "CallingPage": {
+    "mute": "静音",
+    "keyboard": "键盘",
+    "audioRoute": "免提",
+    "saveVoice": "录音",
+    "contract": "通讯录",
+    "message": "短信"
+  },
+  "VoicePage": {
+    "title": "电话录音",
+    "edit": "编辑",
+    "done": "完成"
+  },
+  "CameraPage": {
+    "permissions_title_ios": "访问摄像头权限没打开",
+    "permissions_detail_ios": "请在iPhone的“设置-隐私”选项中,允许访问您的摄像头",
+    "sure_send": "是否发送",
+  },
+  "PhotoPage": {
+    "all_photo": "所有照片"
+  },
+  "NewPhonePage": {
+    "nealy_phone": "近期通话",
+    "new_phone": "新建电话",
+    "call": "呼叫"
+  },
+  "PhoneEditDetail": {
+    "title": "我的电话号码",
+    "delete_title": "您正在进行删除电话号码",
+    "delete_detail": "放弃该号码后，该号码相关的通话记录、短信等都会被删除",
+    "delete_success": "删除成功",
+    "tip1": "注意：为了保持号码的激活状态，需符合",
+    "tip2": "这些条件",
+    "home": "住宅",
+    "office": "办公室",
+    "mobile": "移动电话",
+    "exprot_date": "有效期至",
+    "stop_phone": "暂停号码",
+    "main_phone": "主叫号码",
+    "delete_phone": "删除号码",
+    "phone_charge": "号码续费"
+  },
+  "QuestionAndListPage": {
+    "title": "新手指南"
+  },
+  "NewPasswordPage": {
+    "title_new": "登录密码创建",
+    "title_change": "登录密码修改",
+    "password_placeholder": "请输入密码",
+    "password_title": "请输入密码",
+    "password_title_again": "请再次输入密码",
+    "password_new_title": "请输入新密码",
+    "password_new_title_again": "请确认密码",
+    "old_password": "原密码",
+    "password_error": "两次密码不一致，请检查！！",
+    "create_success": "创建密码成功",
+    "create_faile": "创建密码失败",
+    "change_success": "修改密码成功",
+    "change_faile": "修改密码失败"
+  },
+  "BuyListPage": {
+    "buy_coin": "购买洋葱币",
+    "get_coin": "获取洋葱币",
+    "you_coin": "您的洋葱币余额"
+  },
+  "CountrySelect": {
+    "advance": "推荐",
+    "hot_sell": "热销",
+    "country_number": "国际号码",
+    "get_own_phone": "申请专属电话"
+  },
+  "OrderList": {
+    "title": "订单详细"
+  },
+  "other": {
+    "coin_name": "洋葱币",
+    "retry": "重试",
+    "from": "来自",
+    "to": "发给",
+    "sure": "确定",
+    "cancel": "取消",
+    "sending": "发送中",
+    "sms_code_error": "接收号码不正确",
+    "sms_send_retry": "是否确定重发这条信息",
+    "call_in": "拨入 ",
+    "call_out": "拨打 "
+  },
+  "error": {
+    "websocket_net_error": "与服务器连接中断，请检查网络！！",
+    "websocket_has_close": "会话已经关闭"
+  }
+}
